@@ -1,0 +1,139 @@
+.bg-img {
+    /* The image used */
+ 
+    height:650px;
+    width: 95%;
+    background-size: cover;
+ 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+    
+}
+
+/* The navbar */
+.topnav {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* Navbar links */
+.topnava{
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 33px;
+    color: #18347E;
+    width: 99px;
+    height: 20px;
+    left: 1245px;
+    top: 57px;
+}
+
+.topnav a:hover {
+  
+    color: #FFE0D3;
+}
+
+.text {
+    position: absolute;
+    font-family: 'Heebo';
+    font-style: bold;
+    font-weight: 500;
+    font-size: 95px;
+    line-height: 100px;
+    color: #F2FCFF;
+    margin: 50;
+}
+
+.text1 {
+    position: absolute;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 95px;
+    line-height: 140px;
+    text-align: right;
+    color: #F2FCFF;
+    margin-right: 15px;
+}
+
+.text2 {
+    width: 581px;
+    height: 96px;
+    left: 747px;
+    top: 552px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: right;
+    color: #18347E;
+    margin-right: 50px;
+}
+
+.button1 {
+    position: absolute;
+    color: #18347E;
+    background-color: transparent;
+    border-radius: 18px;
+    margin-right: 40px;
+    border: 2px solid #FFE0D3;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    left: 400px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 440px;
+    font-size: 22px;
+    line-height: 27px;
+    
+}
+
+.button2 {
+    position: absolute;
+    color: #18347E;
+    background-color: transparent;
+    border-radius: 18px;
+    margin-right: 40px;
+    border: 2px solid #FFE0D3;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    left: 250px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.button1:hover {
+    background-color: #FFE0D3;
+    color: #18347E;
+  }
+  
+.button2:hover {
+    background-color: #FFE0D3;
+    color: #18347E;
+  }
