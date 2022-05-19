@@ -4,10 +4,13 @@ import { Registration } from './Component/Registration';
 import { BrowserRouter } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import { Login } from './Component/Login';
+import { Nav } from './Component/Nav';
+
 import HomePage from './Component/HomePage';
 import { AddMedical } from './Component/AddMedical';
 import Details from './Component/Details';
 import ListMedicals from './Component/ListMedicals';
+import { Redirect } from "react-router-dom";
 
 
 
@@ -15,11 +18,14 @@ function App() {
   return (
     <div className="App">
      <BrowserRouter>
-
+       <Nav/>
        {/* <Registration></Registration> */}
        {/* <Login></Login> */}
        {/* <HomePage></> */}
-       <Route path="/" component={HomePage}></Route>
+       <Route exact path="/">
+          <Redirect to="/HomePage" />
+        </Route>
+       <Route path="/HomePage" component={HomePage}></Route>
        <Route path="/Login"  component={Login}></Route>
        <Route path="/Registration" component={Registration}></Route>
 

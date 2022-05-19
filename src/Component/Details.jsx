@@ -5,8 +5,8 @@ import './Details.css';
 export const Details = () => {
      const history = useHistory();
   //טעות!! צריך להעביר לרשימת תרופות
-    const AddMedicalPage = () => {
-        history.push("/AddMedical")
+    const ListMedicalsPage = () => {
+        history.push("/ListMedicals")
         
      }
     // const RegistrationPage = () => {
@@ -287,7 +287,7 @@ export const Details = () => {
                       <span>
                         {/*  <span class=" elementor-button-icon">
                 <i class="fa fa-location-arrow" aria-hidden="true"></i> </span>*/}
-                        <span className="elementor-button-text" onClick={AddMedicalPage}>המשך</span>
+                        <span className="elementor-button-text" onClick={ListMedicalsPage}>המשך</span>
 
 
                       </span>

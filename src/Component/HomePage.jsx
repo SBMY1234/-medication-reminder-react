@@ -20,13 +20,13 @@ export const HomePage = () => {
         <div>
             {/* <img src={pic1} class="bg-img" ></img> */}
             <div className='container bg-img ' >
-                <div class="topnav">
+                {/* <div class="topnav">
                     <Link to="/HomePage" class="topnava">דף הבית</Link>
                     <Link to="/Login" class="topnava">התחברות</Link>
                     <Link to="/Home" class="topnava">אודות</Link>
                     <Link to="/Home" class="topnava">צור קשר</Link>
 
-                </div>
+</div>*/}
 
                 <div>
                     <button class="button1" onClick={LoginPage}>התחברות</button>
