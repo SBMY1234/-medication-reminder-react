@@ -1,23 +1,42 @@
 import './HomePage.css';
 import pic1 from '../assas/picture.png';
-import { Link } from 'react-router-dom';
+import { Link , useHistory} from 'react-router-dom';
+
 
 //דף הבית
-export const HomePage=()=>{
-    return<>
- <div>
-    <img src={pic1} class="bg-img" ></img>
+export const HomePage = () => {
+    const history = useHistory();
+  
+    const LoginPage = () => {
+        history.push("/Login")
+        
+    }
+    const RegistrationPage = () => {
+        history.push("/Registration")
+        
+    }
+   
+    return <>
+        <div>
+            {/* <img src={pic1} class="bg-img" ></img> */}
+            <div className='container bg-img ' >
+                <div class="topnav">
+                    <Link to="/HomePage" class="topnava">דף הבית</Link>
+                    <Link to="/Login" class="topnava">התחברות</Link>
+                    <Link to="/Home" class="topnava">אודות</Link>
+                    <Link to="/Home" class="topnava">צור קשר</Link>
 
-    <div class="container">
-         <div class="topnav"> 
-          <Link to="/HomePage" class="topnava">דף הבית</Link>
-          <Link to="/Login" class="topnava">התחברות</Link>
-          <Link to="/Home" class="topnava">אודות</Link>
-          <Link to="/Home" class="topnava">צור קשר</Link>
+                </div>
 
-        </div> 
-        </div> </div> 
-       <div class="text">
+                <div>
+                    <button class="button1" onClick={LoginPage}>התחברות</button>
+                </div>
+                <div>
+                    <button class="button2" onClick={RegistrationPage}>הרשמה</button>
+                </div>
+            </div>
+        </div>
+        {/* <div class="text">
             <p>
                 <b>תרופון</b>
             </p>
@@ -40,15 +59,10 @@ export const HomePage=()=>{
             <p>
                 הנתונים שלך, התזכורות שלנו
             </p>
-        </div>
-        <div>
-            <button class="button1">התחברות</button>
-        </div>
-        <div>
-            <button class="button2">הרשמה</button>
-        </div>
-     
-     
+        </div>*/}
+
+
+
     </>
 }
 export default HomePage;

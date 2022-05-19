@@ -57,11 +57,14 @@ import { useState } from "react";
         <h2>ברוך הבא</h2>
         <h3>נא להקיש כתובת מייל וסיסמה</h3>
         <div>
-        <input type="email" placeholder="כתובת דוא'ל" id="mail" onChange={(e)=>validateEmail(e)}></input>
+        <input type="email" placeholder="טלפון" id="mail" onChange={(e)=>validateEmail(e)}></input>
         <small style={{ color: "red" }}>{errors.EmailError}</small>
         </div>
         <div>
         <input type="password" placeholder="סיסמא" id="pass" ></input>
+        </div>
+        <div>
+        <input type="password" placeholder="אימות סיסמא" id="pass" ></input>
         </div>
         <br></br>
          <div>

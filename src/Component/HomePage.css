@@ -1,10 +1,9 @@
 .bg-img {
     /* The image used */
- 
+    background-image: url("../assas/HomePage.PNG");
     height:650px;
-    width: 95%;
+    width: 100%;
     background-size: cover;
- 
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -17,10 +16,10 @@
 
 /* Position the navbar container inside the image */
 .container {
-    position: absolute;
+    /* position: absolute; */
     margin: 20px;
     width: auto;
-    
+   
 }
 
 /* The navbar */

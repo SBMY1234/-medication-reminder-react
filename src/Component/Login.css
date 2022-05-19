@@ -1,6 +1,6 @@
 /* דף העיצוב */
 
-/*.ruler {
+.ruler {
     background-color: rgb(91, 209, 248); 
     display: flex;
     flex-direction: row;
@@ -8,23 +8,23 @@
 
 
 
-/* body {
+  body {
     font-family: Arial;
     font-size: 11px;
     color: #0c0b0b;
-     background: #ffffff url(../../img/body_back.jpg) no-repeat top center fixed; 
+     /* background: #ffffff url(../../img/body_back.jpg) no-repeat top center fixed;  */
     background-size: cover;
-}
-/*
-img {
+} 
+
+ img {
     max-width: 100%;
     height: auto;
     width: auto\9;
-    /* ie8 */
+ }
 
 
 
-/*.column {
+ .column {
     float: left;
     width: 27%;
     padding: 3%;
@@ -32,12 +32,12 @@ img {
   }
   
   /* Clearfix (clear floats) */
- /* .row::after {
+ .row::after {
     text-align: center;
     content: "";
     clear: both;
     display: table;
-  } */
+  }
   .help{
     position: absolute;
     width: 200px;
@@ -54,7 +54,7 @@ img {
     color: #18347E;
     
   }
-  /*.help2{
+  .help2{
     position: absolute;
     width: 749px;
     height: 50px;
@@ -142,7 +142,7 @@ img {
 
 
       /* שכחתי סיסמה */
-/*.forgatKod{
+.forgatKod{
     
 position: absolute;
 width: 174px;
@@ -170,7 +170,7 @@ color: rgba(24, 52, 126, 0.65);
     background: #18347E;
     border-radius: 34px;
 }
-*/
+
 p{
     
     color: #FFE0D3;

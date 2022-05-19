@@ -1,0 +1,18 @@
+.myautocomplate {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 573px;
+    height: 89px;
+    left: 433px;
+    top: 232px;
+
+    /* border: 2px solid #18347E; */
+    filter: drop-shadow(0px 4px 23px rgba(0, 0, 0, 0.67));
+}
+
+.selectDayInline{
+    display: "flex",
+     /* justifyContent: "center",
+    alignItems: "center"  */
+}

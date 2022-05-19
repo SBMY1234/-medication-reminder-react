@@ -5,7 +5,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import { Login } from './Component/Login';
 import HomePage from './Component/HomePage';
-import { Madicines } from './Component/Medicines';
+import { AddMedical } from './Component/AddMedical';
+import Details from './Component/Details';
 
 
 
@@ -15,14 +16,15 @@ function App() {
     <div className="App">
      <BrowserRouter>
 
-       <Registration></Registration>
+       {/* <Registration></Registration> */}
        {/* <Login></Login> */}
-       {/* <HomePage></HomePage> */}
-       <Route path="/Registration" component={Registration}></Route>
+       {/* <HomePage></> */}
        <Route path="/" component={HomePage}></Route>
-       <Route path="/Login"  component={Registration}></Route>
-       <Route path="/Madicines"  component={Madicines}></Route>
-       {/* <Route path="/Login"  component={Login}></Route> */}
+       <Route path="/Login"  component={Login}></Route>
+       <Route path="/Registration" component={Registration}></Route>
+
+       <Route path="/AddMedical"  component={AddMedical}></Route>
+       <Route path="/Details"  component={Details}></Route>
       </BrowserRouter> 
       </div>
   );
