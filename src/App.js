@@ -7,7 +7,7 @@ import { Login } from './Component/Login';
 import HomePage from './Component/HomePage';
 import { AddMedical } from './Component/AddMedical';
 import Details from './Component/Details';
-
+import ListMedicals from './Component/ListMedicals';
 
 
 
@@ -25,6 +25,8 @@ function App() {
 
        <Route path="/AddMedical"  component={AddMedical}></Route>
        <Route path="/Details"  component={Details}></Route>
+       <Route path="/ListMedicals"  component={ListMedicals}></Route>
+
       </BrowserRouter> 
       </div>
   );
