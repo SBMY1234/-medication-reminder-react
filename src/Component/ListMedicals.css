@@ -1,4 +1,4 @@
-#part1 {
+/* #part1 {
     direction: rtl;
     display: flex;
     position: absolute;
@@ -6,7 +6,7 @@
     height: 100px;
     top: 2px;
     background: rgba(154, 197, 209, 0.13);
-}
+} */
 
 #part2 {
     direction: rtl;
@@ -151,6 +151,11 @@ h1 {
     margin-top: 529px;
 }
 
+#decsamol2{
+    margin-top: 729px;
+}
+
+
 
 .date{
     position: absolute;
@@ -164,6 +169,10 @@ h1 {
     margin-top: 545px; 
 }
 
+#lastDate3{
+    margin-top: 745px; 
+}
+
 .date2{
     position: absolute;
     margin-left:10% ;
@@ -174,6 +183,10 @@ h1 {
 #lastDate2{
 margin-top: 548px;
 }
+
+#lastDate4{
+    margin-top: 748px;
+    }
 
 .rec {
     position: absolute;
@@ -199,6 +212,10 @@ margin-top: 548px;
 }
 #reco{
     top: 600px;
+}
+
+#reco2{
+    top: 800px;
 }
 
 .box{
@@ -243,3 +260,8 @@ margin-top: 548px;
 #update{
     margin-top: 530px;
 }
+
+#update2{
+    margin-top: 730px;
+}
+
