@@ -2,7 +2,7 @@ import { Link , useHistory} from 'react-router-dom';
 import './Details.css';
 
 
-export const Details = () => {
+export const Details = ({stepId}) => {
      const history = useHistory();
   //טעות!! צריך להעביר לרשימת תרופות
     const ListMedicalsPage = () => {
@@ -30,7 +30,7 @@ export const Details = () => {
       <p> צור קשר</p>
     </div>
   </div> */}
-  <div id="part2">
+  {/* <div id="part2">
     <div id="btn">
       <button type="button" className="btn">
         1
@@ -62,7 +62,7 @@ export const Details = () => {
         אישור ושליחה
       </p>
     </div>
-  </div>
+  </div> */}
   <div id="part3">
     <div id="first">
       <br />

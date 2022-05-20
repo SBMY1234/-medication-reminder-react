@@ -17,7 +17,7 @@ export const HomePage = () => {
     }
    
     return <>
-        <div>
+        <div style={{position: 'relative'}}>
             {/* <img src={pic1} class="bg-img" ></img> */}
             <div className='container bg-img ' >
                 {/* <div class="topnav">
@@ -28,10 +28,9 @@ export const HomePage = () => {
 
 </div>*/}
 
-                <div>
+                <div className='btnsWrapper'>
                     <button class="button1" onClick={LoginPage}>התחברות</button>
-                </div>
-                <div>
+                
                     <button class="button2" onClick={RegistrationPage}>הרשמה</button>
                 </div>
             </div>

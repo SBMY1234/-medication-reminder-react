@@ -11,10 +11,13 @@ import { AddMedical } from './Component/AddMedical';
 import Details from './Component/Details';
 import ListMedicals from './Component/ListMedicals';
 import { Redirect } from "react-router-dom";
+import Accept from './Component/Accept';
+import { useState } from 'react';
 
 
 
 function App() {
+  const [stepId, setStepId] = useState()
   return (
     <div className="App">
      <BrowserRouter>
@@ -25,13 +28,14 @@ function App() {
        <Route exact path="/">
           <Redirect to="/HomePage" />
         </Route>
-       <Route path="/HomePage" component={HomePage}></Route>
+       <Route path="/HomePage" render={()=> <HomePage stepId={stepId}/>} component={HomePage} ></Route>
        <Route path="/Login"  component={Login}></Route>
        <Route path="/Registration" component={Registration}></Route>
 
        <Route path="/AddMedical"  component={AddMedical}></Route>
        <Route path="/Details"  component={Details}></Route>
        <Route path="/ListMedicals"  component={ListMedicals}></Route>
+       <Route path="/Accept"  component={Accept}></Route>
 
       </BrowserRouter> 
       </div>

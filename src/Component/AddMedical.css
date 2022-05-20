@@ -1,4 +1,4 @@
-.myautocomplate {
+/* .myautocomplate {
     box-sizing: border-box;
 
     position: absolute;
@@ -7,12 +7,18 @@
     left: 433px;
     top: 232px;
 
-    /* border: 2px solid #18347E; */
+    border: 2px solid #18347E; 
     filter: drop-shadow(0px 4px 23px rgba(0, 0, 0, 0.67));
 }
 
 .selectDayInline{
     display: "flex",
-     /* justifyContent: "center",
-    alignItems: "center"  */
+    justifyContent: "center",
+    alignItems: "center"  
+} */
+.timeWrapperDiv {
+  display: flex;
+}
+.labelTime {
+  margin: 0 5px !important;
 }
