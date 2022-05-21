@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Inter&display=swap');
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+
+.help{
+    direction: rtl;
+}
+
+.help2{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+/* font-size: 38px; */
+line-height: 46px;
+
+color: #18347E;
+}

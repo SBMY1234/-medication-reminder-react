@@ -62,12 +62,13 @@ export const Login = () => {
 
     }
     return <>
+    <div id="part3">
         <form onSubmit={(e) => addNewUser(e)}>
-            <h1 class="help">!שלום</h1>
+            <h1 class="help">שלום!</h1>
             <h2 class="help2">נא להקיש טלפון וסיסמה להתחברות</h2>
             <div>
-                <input type="email" placeholder="טלפון" id="mail" onChange={(e) => validateEmail(e)}></input>
-                <small style={{ color: "red" }}>{errors.EmailError}</small>
+                <input type="tel" placeholder="טלפון" id="tel" ></input>
+                {/* <small style={{ color: "red" }}>{errors.EmailError}</small>  onChange={(e) => validateEmail(e)}*/}
             </div>
             <div>
                 <input type="password" placeholder="סיסמא" id="pass"></input>
@@ -78,6 +79,7 @@ export const Login = () => {
                 <input type="submit" class="cancelbtn" value="אישור" onClick={DetailsPage} />
             </div>
         </form>
+        </div>
 
     </>
 }

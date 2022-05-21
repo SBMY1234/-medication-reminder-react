@@ -46,7 +46,7 @@ export const ListMedicals = () => {
 
   return (
     <>
-      {/* <div id="part2">
+      <div id="part2">
         <div id="btn">
           <button type="button" className="btn">
             1
@@ -75,7 +75,8 @@ export const ListMedicals = () => {
             {" אישור ושליחה"}
           </p>
         </div>
-      </div> */}
+      </div> 
+
       <div className="medicList" id="part3">
         <h1>רשימת התרופות של שמואל שמואלי:</h1>
         {/* <canvas id="myCanvas" className="rec"></canvas> */}
@@ -99,9 +100,14 @@ export const ListMedicals = () => {
             />
           ))}
         </div>
-        <button className="continueBtn" onClick={() => history.push("/Accept")}>
-          אישור
-        </button>
+        <div>
+          <button className="continueBtn" onClick={() => history.push("/Details")}>
+            חזרה
+          </button>
+          <button className="continueBtn" onClick={() => history.push("/Accept")}>
+            אישור
+          </button>
+        </div>
       </div>
     </>
   );

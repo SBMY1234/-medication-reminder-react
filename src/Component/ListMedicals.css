@@ -1,6 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Inter&display=swap');
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
 .medicalsContainer {
   background: rgba(242, 252, 255, 0.56);
-  box-shadow: 0px 0px 20px #7591d9;
+  box-shadow: 0px 0px 5px #7591d9;
   border-radius: 31px;
   border: 1px solid #7591d9;
   margin: 10px 20px;

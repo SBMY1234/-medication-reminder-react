@@ -1,5 +1,6 @@
 import { Link , useHistory} from 'react-router-dom';
 import './Details.css';
+import MyStepper from './Steps';
 
 
 export const Details = ({stepId}) => {
@@ -30,7 +31,7 @@ export const Details = ({stepId}) => {
       <p> צור קשר</p>
     </div>
   </div> */}
-  {/* <div id="part2">
+  <div id="part2">
     <div id="btn">
       <button type="button" className="btn">
         1
@@ -62,10 +63,11 @@ export const Details = ({stepId}) => {
         אישור ושליחה
       </p>
     </div>
-  </div> */}
+  </div>
   <div id="part3">
     <div id="first">
       <br />
+      {/* <h1 style={{ textAlign: "center" }} className="elementor"> */}
       <h1 style={{ textAlign: "center" }} className="elementor">
         אנא מלא פרטים אישיים:{" "}
       </h1>
@@ -170,9 +172,10 @@ export const Details = ({stepId}) => {
                   <br />
                   <br />
                 </div>
-                <div id="last">
+                <div >
                   <h4>קופת חולים:</h4>
-                  <div>
+                  <div id="last">
+                  <div className='kupaCenter'>
                     <input
                       type="radio"
                       id="leumit"
@@ -183,8 +186,8 @@ export const Details = ({stepId}) => {
                       לאומית{" "}
                     </label>
                   </div>
-                  <br />
-                  <div>
+                 
+                  <div className='kupaCenter'>
                     <input
                       type="radio"
                       id="meuchedet"
@@ -195,8 +198,8 @@ export const Details = ({stepId}) => {
                       מאוחדת
                     </label>
                   </div>
-                  <br />
-                  <div>
+                 
+                  <div className='kupaCenter'>
                     <input
                       type="radio"
                       id="macabi"
@@ -207,8 +210,9 @@ export const Details = ({stepId}) => {
                       מכבי
                     </label>
                   </div>
-                  <br />
-                  <div>
+                 
+                 
+                  <div className='kupaCenter'>
                     <input
                       type="radio"
                       id="klalit"
@@ -218,6 +222,7 @@ export const Details = ({stepId}) => {
                     <label htmlFor="klalit" className="kupa">
                       כללית{" "}
                     </label>
+                  </div>
                   </div>
                 </div>
                 <br />

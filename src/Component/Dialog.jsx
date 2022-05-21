@@ -42,10 +42,10 @@ export const FormDialog = ({
 
   return (
     <div>
-      <Button variant="outlined" onClick={handleClickOpen}>
+      <Button  className="addMedBtn" variant="outlined" onClick={handleClickOpen}>
         הוסף תרופה
       </Button>
-      <Dialog fullWidth open={open} onClose={clsDialog}>
+      <Dialog fullWidth open={open} onClose={clsDialog} className="dialogCss">
         <DialogTitle>שם התרופה</DialogTitle>
         <DialogContent>
           <form onSubmit={(e) => addNewUMadicines(e)}>
@@ -75,7 +75,7 @@ export const FormDialog = ({
                   id="timeMorning"
                   label=""
                   type="time"
-                  disabled
+                  
                   //defaultValue="07:30"
                   InputLabelProps={{
                     shrink: true,
@@ -83,7 +83,7 @@ export const FormDialog = ({
                   inputProps={{
                     step: 300, // 5 min
                   }}
-                  xs={{ width: 150 }}
+                  sx={{ width: 150 }}
                 />
               </div>
               <div className="timeWrapperDiv">
@@ -96,7 +96,7 @@ export const FormDialog = ({
                   id="timeNoon"
                   label=""
                   type="time"
-                  disabled
+                  
                   //defaultValue="07:30"
                   InputLabelProps={{
                     shrink: true,
@@ -117,7 +117,7 @@ export const FormDialog = ({
                   id="timeEvening"
                   label=""
                   type="time"
-                  disabled
+                  
                   //defaultValue="07:30"
                   InputLabelProps={{
                     shrink: true,
@@ -133,16 +133,16 @@ export const FormDialog = ({
             <h4>בחר יום</h4>
             <div className="selectDayInline">
               <FormGroup>
-                <FormControlLabel
+                <FormControlLabel className="checkDay"
                   control={<Checkbox value={"ראשון"} />}
                   label="ראשון"
                 />
-                <FormControlLabel control={<Checkbox />} label="שני" />
-                <FormControlLabel control={<Checkbox />} label="שלישי" />
-                <FormControlLabel control={<Checkbox />} label="רביעי" />
-                <FormControlLabel control={<Checkbox />} label="חמישי" />
-                <FormControlLabel control={<Checkbox />} label="שישי" />
-                <FormControlLabel control={<Checkbox />} label="שבת" />
+                <FormControlLabel className="checkDay" control={<Checkbox />} label="שני" />
+                <FormControlLabel className="checkDay" control={<Checkbox />} label="שלישי" />
+                <FormControlLabel className="checkDay" control={<Checkbox />} label="רביעי" />
+                <FormControlLabel className="checkDay" control={<Checkbox />} label="חמישי" />
+                <FormControlLabel className="checkDay" control={<Checkbox />} label="שישי" />
+                <FormControlLabel className="checkDay" control={<Checkbox />} label="שבת" />
               </FormGroup>
             </div>
           </form>
