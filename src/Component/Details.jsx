@@ -1,15 +1,33 @@
 import { Link , useHistory} from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import './Details.css';
 import MyStepper from './Steps';
 
 
 export const Details = ({stepId}) => {
      const history = useHistory();
-  //טעות!! צריך להעביר לרשימת תרופות
-    const ListMedicalsPage = () => {
+
+     
+
+
+     const [firstName, setfirstName] = useState('');
+     const [lastName, setlastName] = useState('');
+     const [userTel, setuserTel] = useState('');
+
+     const ListMedicalsPage = () => {
+      let newUserData = {
+				newFirstName: firstName,
+        newLastName: lastName,
+        newTel: userTel
+        
+			};
+      localStorage.setItem('personData', JSON.stringify(newUserData));
+
         history.push("/ListMedicals")
         
      }
+   
+   
     // const RegistrationPage = () => {
     //     history.push("/Registration")
         
@@ -41,7 +59,7 @@ export const Details = ({stepId}) => {
         פרטים אישיים
       </p>
     </div>
-    <div className="line">-------</div>
+    <div className="line">-----</div>
     <div id="btn2">
       <button type="button" className="btn2">
         2
@@ -52,7 +70,7 @@ export const Details = ({stepId}) => {
       </p>
     </div>
     <div className="line" id="line2">
-      -------
+      -----
     </div>
     <div id="btn3">
       <button type="button" className="btn3">
@@ -83,10 +101,10 @@ export const Details = ({stepId}) => {
           className="elementor-widget-container"
         >
           <form className="elementor-form" method="post" name="New Form">
-            <input type="hidden" name="post_id" defaultValue={1342} />
+            {/* <input type="hidden" name="post_id" defaultValue={1342} />
             <input type="hidden" name="form_id" defaultValue="40dedca" />
             <input type="hidden" name="referer_title" />
-            <input type="hidden" name="queried_id" defaultValue={1342} />
+            <input type="hidden" name="queried_id" defaultValue={1342} /> */}
             <div
               style={{ textAlign: "center" }}
               className="elementor-form-fields-wrapper elementor-labels-above"
@@ -101,7 +119,9 @@ export const Details = ({stepId}) => {
                   <input
                     size={1}
                     type="text"
-                    name="form_fields[name]"
+                    name="firstName"
+                    value={firstName}
+                    onChange={(e) => setfirstName(e.target.value)}
                     id="form-field-name"
                     dir="rtl"
                     className="elementor-field elementor-size-md  elementor-field-textual"
@@ -115,8 +135,10 @@ export const Details = ({stepId}) => {
                   <input
                     size={1}
                     type="text"
-                    name="form_fields[name]"
+                    name="lastName"
                     dir="rtl"
+                    value={lastName}
+                    onChange={(e) => setlastName(e.target.value)}
                     className="elementor-field elementor-size-md  elementor-field-textual"
                     placeholder="שם משפחה"
                     required="required"
@@ -130,8 +152,10 @@ export const Details = ({stepId}) => {
                 <input
                   size={1}
                   type="tel"
-                  name="form_fields[d1a8aa0]"
-                  id="form-field-d1a8aa0"
+                  name="tel"
+                  // id="form-field-d1a8aa0"
+                  value={userTel}
+                  onChange={(e) => setuserTel(e.target.value)}
                   className="elementor-field elementor-size-md  elementor-field-textual"
                   placeholder="טלפון/נייד"
                   pattern="[0-9()#&+*-=.]+"

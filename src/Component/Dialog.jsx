@@ -21,10 +21,12 @@ export const FormDialog = ({
   options
 }) => {
   const [open, setOpen] = React.useState(isDialogOpen);
-  const [selection, setSelection] = React.useState(currentName);
+  const [selection, setSelection] = React.useState("");
   React.useEffect(() => {
     setOpen(isDialogOpen);
     console.log("isDialogOpen", isDialogOpen);
+    console.log("currentName", currentName);
+
   }, [isDialogOpen]);
 
   const handleClickOpen = () => {

@@ -62,22 +62,34 @@ export const Login = () => {
 
     }
     return <>
-    <div id="part3">
+    <div id="login">
         <form onSubmit={(e) => addNewUser(e)}>
             <h1 class="help">שלום!</h1>
             <h2 class="help2">נא להקיש טלפון וסיסמה להתחברות</h2>
             <div>
-                <input type="tel" placeholder="טלפון" id="tel" ></input>
+            <h4 id="tel">טלפון:</h4>
+                <input type="tel"   className='tel' ></input>
                 {/* <small style={{ color: "red" }}>{errors.EmailError}</small>  onChange={(e) => validateEmail(e)}*/}
             </div>
-            <div>
-                <input type="password" placeholder="סיסמא" id="pass"></input>
+            <br />
+            <div >
+            <h4 id="tel">סיסמא:</h4>
+                <input type="password" id="pass" className='tel'  ></input>
             </div>
             <br></br>
             <p class="forgatKod" href="">שכחתי סיסמא</p>
-            <div>
-                <input type="submit" class="cancelbtn" value="אישור" onClick={DetailsPage} />
-            </div>
+                <button
+                      type="submit"
+                      className="elementor-button elementor-size-md"
+                    >
+                      <span>
+                        {/*  <span class=" elementor-button-icon">
+                <i class="fa fa-location-arrow" aria-hidden="true"></i> </span>*/}
+                        <span className="elementor-button-text" onClick={DetailsPage}>אישור</span>
+
+
+                      </span>
+                    </button>
         </form>
         </div>
 

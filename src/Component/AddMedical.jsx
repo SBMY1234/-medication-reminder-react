@@ -14,6 +14,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 
 import "./AddMedical.css";
+import { color } from "@mui/system";
 
 //התרופות
 export const AddMedical = () => {
@@ -39,13 +40,15 @@ export const AddMedical = () => {
 
   return (
     <>
+
       <div>
-      <h1>hufrgjifgd</h1>
+        <h1>hufrgjifgd</h1>
 
         <Button variant="outlined" onClick={handleClickOpen}>
           פתיחת דיאלוג
         </Button>
-        <Dialog open={open} onClose={handleClose} maxWidth={600}>
+
+        <Dialog open={open} onClose={handleClose} maxWidth={600} >
           <DialogTitle>הוספת תרופה</DialogTitle>
           <DialogContent>
             <DialogContentText>
@@ -67,9 +70,11 @@ export const AddMedical = () => {
             <Button onClick={handleClose}>שמירה</Button>
           </DialogActions>
         </Dialog>
+
       </div>
 
-      <form onSubmit={(e) => addNewUMadicines(e)}>
+      <form className="Dialogs" onSubmit={(e) => addNewUMadicines(e)}>
+
         <Autocomplete
           className="myautocomplate"
           disablePortal
@@ -153,7 +158,9 @@ export const AddMedical = () => {
             <FormControlLabel control={<Checkbox />} label="שבת" />
           </FormGroup>
         </div>
+
       </form>
+
     </>
   );
 };

@@ -7,34 +7,37 @@
   top: 2px;
   background: rgba(154, 197, 209, 0.13);
 }
-h3 {
-  color: #356d9c;
+h3{
+  color: #356D9C; 
 }
-h1 {
-  color: #356d9c;
-  direction: rtl;
+h1{
+  color: #356D9C;
+  direction: rtl; 
 }
-h4 {
-  color: #356d9c;
+h4{
+  color: #356D9C; 
   direction: rtl;
 }
 
-.titles {
+.titles{
   margin-left: 32%;
   margin-right: 30%;
 }
 
+
 .flex-container {
   display: flex;
+ 
 }
 
 .flex-container > div {
+  
   text-align: center;
   line-height: 75px;
   font-size: 30px;
 }
 
-#form-field-name {
+#form-field-name{
   margin-right: 366px;
   margin-left: 37px;
 }
@@ -42,65 +45,70 @@ h4 {
 #part2 {
   direction: rtl;
   display: flex;
-  position: absolute;
+  /*position: absolute;*/
   width: 100%;
-  height: 100px;
+  height: 200px;
   top: 2px;
-  background: rgba(154, 197, 209, 0.13);
+  
 }
 
 p {
   padding: 20px 50px 50px 50px;
-  color: #18347e;
+  color: #18347E;
 }
 
-h1 {
-  margin-bottom: 40px;
-  color: #18347e;
+h1 { 
+margin-bottom: 40px;
+color: #18347E;
 }
 
-#part3 {
-  /* position: absolute; */
+#part3{
+  position: absolute;
   width: 100%;
-  height: 1610px;
+  height: 1640px; 
   top: 300px;
-  background: #f2fcff;
+  background: #F2FCFF;
 }
 
-#tel {
+#tel{
   margin-left: 30.5%;
 }
 
-#tel2 {
+#tel2{
   margin-left: 34.5%;
 }
 
-#tel3 {
+#tel3{
   margin-left: 37.1%;
 }
 
-.kupa {
-  color: #18347e;
+
+#mail{
+  margin-left: 37%;
 }
 
-.line {
+.kupa{
+  color:#18347E;
+}
+
+.line{
   width: 50px;
   height: 31px;
-  position: absolute;
-  font-family: "Inter";
+  position: absolute;  
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 33px;
   text-align: center;
-  margin-top: 160px;
+  margin-top: 44px; 
   margin-right: 7.9%;
-  font: bold;
+  font:bold;
   opacity: 0.4;
-  color: #18347e;
+  color: #18347E;
 }
 
-#line2 {
+#line2{
   margin-right: 15.9%;
 }
 
@@ -110,14 +118,14 @@ h1 {
   height: 60px;
   left: 92%;
   top: 150px;
-  background: #ffe0d3;
+  background: #FFE0D3;
   border-radius: 50%;
-  border-color: #18347e;
-  font-family: "Inter";
+  border-color: #18347E;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
-  color: #18347e;
+  color: #18347E;
 }
 
 .btn2 {
@@ -127,14 +135,14 @@ h1 {
   left: 84%;
   top: 150px;
   font-style: normal;
-  background: #ffe0d3;
+  background: #FFE0D3;
   border-radius: 50%;
   border: solid 0px;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-weight: 600;
   font-size: 30px;
   opacity: 0.4;
-  color: #18347e;
+  color: #18347E;
 }
 
 .btn3 {
@@ -145,17 +153,19 @@ h1 {
   left: 76%;
   top: 150px;
   font-style: normal;
-  background: #ffe0d3;
+  background: #FFE0D3;
   border-radius: 50%;
-  border: solid 0px;
-  font-family: "Inter";
+  border: solid 0px; 
+  font-family: 'Inter';
   font-weight: 600;
   font-size: 30px;
-  color: #18347e;
+  color: #18347E;
+
 }
 
-.elementor {
-  /* color: #356d9c; */
+
+.elementor{
+  color: #356d9c;
   font-family: inherit;
   border-radius: 5px;
   padding: 20px;
@@ -166,85 +176,79 @@ h1 {
   padding: 6px 16px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  color: #356d9c;
+  color:#356D9C;
 }
 .elementor-field-subgroup label {
-  color: #356d9c;
-  text-align: right;
+  color: #356D9C;
+ text-align: right;
+
 }
-.flex-container > div.elementor-field-group .elementor-field-textual {
+.flex-container> div.elementor-field-group .elementor-field-textual{
   width: 347px !important;
 }
 .elementor-field-group .elementor-field-textual {
-  width: 531px;
-  height: 55px;
-  left: 705px;
-  top: 570px;
-  right: 394px;
-  border: 3px solid #ffe0d3;
-  filter: drop-shadow(0px 4px 29px rgba(0, 0, 0, 0.25));
+width: 531px;
+height: 55px;
+left: 705px;
+top: 570px;
+right: 394px;
+border: 3px solid #FFE0D3;
+filter: drop-shadow(0px 4px 29px rgba(0, 0, 0, 0.25));
 }
 
-.elementor-button-text {
-  width: 82px;
-  height: 34px;
-  left: 679px;
-  top: 2650px;
+.elementor-button-text{
+width: 82px;
+height: 34px;
+left: 679px;
+top: 2650px;
 
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 29px;
-  line-height: 35px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 29px;
+line-height: 35px;
 
-  color: #ffe0d3;
+color: #FFE0D3;
 }
 .elementor-button[type="submit"] {
-  width: 150px;
-  height: 60px;
-  left: 633px;
-  top: 2633px;
-  border: solid 0px;
-  background: #18347e;
-  box-shadow: 26px 4px 29px rgba(0, 0, 0, 0.2);
-  border-radius: 34px;
+width: 150px;
+height: 60px;
+left: 633px;
+top: 2633px;
+border:solid 0px;
+background: #18347E;
+box-shadow: 26px 4px 29px rgba(0, 0, 0, 0.2);
+border-radius: 34px;
 }
 
-.pratim {
+.pratim{
   width: 7px;
   height: 31px;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 33px;
   text-align: center;
-  margin-top: 200px;
-  color: #18347e;
+  margin-top: 90px;
+  color: #18347E;
 }
 
-#details {
+#details{
   margin-left: 92%;
 }
 
-#list {
+#list{
   margin-left: 84%;
   opacity: 0.4;
 }
 
-#okey {
+#okey{
   margin-left: 76%;
   opacity: 0.4;
 }
 
-#last {
+#last{
+  margin-left: 22%;
   direction: rtl;
-  display: flex;
-  justify-content:  center;
-
 }
-.kupaCenter{
-  padding: 20px;
-
-}
-

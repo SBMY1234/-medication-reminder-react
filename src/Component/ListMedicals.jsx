@@ -4,14 +4,31 @@ import { Medical } from "./Medical";
 import savedMedicals from "../Service/savedMedicals";
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
+import moment from 'moment';
+import allMedical from "../Service/ListMedical";
+
 
 export const ListMedicals = () => {
+
   const history = useHistory();
   const [userMedicals, setUserMedicals] = useState([]);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [currentMedic, setCurrentMedic] = useState("");
+  
+  const [userFirstName, setuserFirst] = useState("");
+ const [userLastName, setuserLast] = useState("");
+
+useEffect(() => {  
+  console.log("get datailssss");
+  const personData = JSON.parse(localStorage.getItem('personData'));
+  setuserFirst(personData.newFirstName);
+  setuserLast(personData.newLastName)
+    
+  console.log(userFirstName, userLastName);
+}) 
   useEffect(() => {
     console.log("use effect");
+   
     setUserMedicals(savedMedicals);
   }, []);
   function dltFunc(medicId) {
@@ -38,7 +55,7 @@ export const ListMedicals = () => {
       {
         medicName: med.name,
         frequencyDays: med.frequencyDays,
-        lastUpdate: Date.now(),
+        lastUpdate: moment(new Date()).format("DD/MM/YY")
       },
     ]);
     clsDialog();
@@ -47,38 +64,39 @@ export const ListMedicals = () => {
   return (
     <>
       <div id="part2">
-        <div id="btn">
-          <button type="button" className="btn">
+        <div id="btn-">
+          <button type="button" className="btn-">
             1
           </button>
-          <p className="pratim" id="details">
+          <p className="pratim-" id="details-">
             {"פרטים אישיים "}
           </p>
         </div>
-        <div className="line">-------</div>
-        <div id="btn2">
-          <button type="button" className="btn2">
+        <div className="line-">-----</div>
+        <div id="btn2-">
+          <button type="button" className="btn2-">
             2
           </button>
-          <p className="pratim" id="list">
+          <p className="pratim-" id="list-">
             {"רשימת תרופות "}
           </p>
         </div>
-        <div className="line" id="line2">
-          -------
+        <div className="line-" id="line2-">
+          -----
         </div>
-        <div id="btn3">
-          <button type="button" className="btn3">
+        <div id="btn3-">
+          <button type="button" className="btn3-">
             3
           </button>
-          <p className="pratim" id="okey">
+          <p className="pratim-" id="okey-">
             {" אישור ושליחה"}
           </p>
         </div>
       </div> 
 
       <div className="medicList" id="part3">
-        <h1>רשימת התרופות של שמואל שמואלי:</h1>
+      {/* {personData.newFirstName } {personData.newLastName} */}
+        <h1>רשימת התרופות של {userFirstName} {userLastName}:</h1>
         {/* <canvas id="myCanvas" className="rec"></canvas> */}
         {/* <button type="button" className="btn4">
         // הוסף תרופה
@@ -88,8 +106,10 @@ export const ListMedicals = () => {
           saveChanges={(med) => saveChangesFunc(med)}
           clsDialog={clsDialog}
           currentName={currentMedic}
-          options={userMedicals.map((medic) => medic.medicName)}
+          
+          options={allMedical}
         />
+         {/* options={userMedicals.map((medic) => medic.medicName)} */}
         <div className="medicalsContainer">
           {userMedicals?.map((medic) => (
             <Medical

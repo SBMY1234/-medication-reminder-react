@@ -3,7 +3,7 @@
 .bg-img {
   /* The image used */
   background-image: url("../assas/HomePage.PNG");
-  height: 650px;
+  height: 750px;
   width: 100%;
   background-size: cover;
 
@@ -28,14 +28,14 @@
   overflow: hidden;
   /* margin-top: 20px; */
   background-color: #F2FCFF;
-  height: 80px;
+  height: 120px;
 }
 
 /* Navbar links */
 .topnava {
   float: right;
   text-align: center;
-  padding: 14px 16px;
+  padding: 35px 16px;
   text-decoration: none;
   display: block;
   font-family: "Heebo";
@@ -48,7 +48,10 @@
   height: 20px;
   left: 1245px;
   top: 57px;
+  
 }
+
+
 
 .topnav a:hover {
   color: #ffe0d3;
