@@ -1,4 +1,4 @@
-![MDB Logo](src\assas\logo.png)
+![](src/assas/logo.png)
 
 ## Development server
 
